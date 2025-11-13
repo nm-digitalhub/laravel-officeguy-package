@@ -28,6 +28,8 @@ name: Sync Laravel Package from WebhostV1
 jobs:
   sync-contents:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout target repository
